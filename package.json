@@ -1,9 +1,17 @@
 {
+  "name": "inkredibledoc",
+  "description": "Learning without Limits! We offers diverse courses and interactive learning tools with hands-on projects to engage learners of all levels.",
+  "version": "6.6.6",
+  "author": "InkredibleDoc <inkredibledoc@gmail.com>",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "fs": "^0.0.1-security",
     "markdown-it": "^14.1.0",
     "path": "^0.12.7"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "build": "npm run build"
   }
 }
