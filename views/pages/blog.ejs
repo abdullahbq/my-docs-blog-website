@@ -1,0 +1,19 @@
+<%- include('../partials/head') %>
+    <%- include('../partials/header') %>
+        <div class="container mt-4">
+            <div class="row">
+                <% posts.forEach(post=> { %>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= post.replace('.md', '' ) %>
+                                </h5>
+                                <a href="/blog/<%= post.replace('.md', '') %>" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+        <%- include('../partials/footer') %>
